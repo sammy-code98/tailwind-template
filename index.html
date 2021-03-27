@@ -7,38 +7,76 @@
 		<link rel="stylesheet" href="./output.css" />
 	</head>
 	<body>
-		<div class="bg-blue-400  p-4 flex justify-between items-center">
-			<div class="flex  item-center">
+		<div class="flex items-center justify-between flex-wrap bg-blue-400  p-4 ">
+			<div class="flex items-center  flex-shrink-0  text-white mr-6">
 				<img
 					src="https://cdn3.iconfinder.com/data/icons/analytics-5/500/Analytics-40-256.png"
 					width="50"
 					alt="logo"
 					class="mr-2 mb-2"
 				/>
-				<span class="absolute mt-12  text-white italic ml-2 text-md">Pyro</span>
-				<a href="#" class="inline-block p-3  text-blue-200 mr-4 ml-4 text-lg"
-					>Home</a
-				>
-				<a href="#" class="inline-block p-3 italic  text-blue-200 text-lg"
-					>About</a
-				>
+				<span class="absolute mt-14  italic ml-2 text-md">Pyro</span>
 			</div>
-
-			<div>
-				<a
-					href="#"
-					class="inline-block p-2 text-blue-200 shadow-sm bg-white rounded-md mr-2 hover:bg-blue-200 hover:text-white transition duration-150 "
-					>Login</a
+			<div class="block lg:hidden">
+				<button
+					class="flex items-center px-3 py-2 border rounded text-teal-100 border-teal-400 hover:text-white hover:border-white"
+					onclick="navBar()"
 				>
-				<a
-					href="#"
-					class="inline-block p-2 text-blue-200 shadow-sm bg-white rounded-md hover:bg-blue-200 hover:text-white transition duration-150  "
-					>SignUp</a
-				>
+					<svg
+						class="fill-current h-3 w-3"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+			<div
+				class="w-full   flex-grow lg:flex lg:item-center lg:w-auto"
+				id="navbar-btn"
+			>
+				<div class="text-sm lg:flex-grow  text-center lg:text-right">
+					<a
+						href="index.html"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4 text-lg"
+					>
+						Home
+					</a>
+					<a
+						href="#about"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4 text-lg"
+					>
+						About Us
+					</a>
+					<a
+						href="#responsive-header"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4 text-lg"
+					>
+						Service
+					</a>
+					<a
+						href="#responsive-header"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white text-lg"
+					>
+						Contact US
+					</a>
+					<a
+						href="#"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-200 hover:bg-white mt-4 lg:mt-0 ml-3"
+						>Login</a
+					>
+					<a
+						href="#"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-200 hover:bg-white mt-4 lg:mt-0 ml-3"
+						>SignUp</a
+					>
+				</div>
 			</div>
 		</div>
+
 		<div class="md:flex justify-between py-20 px-8">
-			<div class="md:w-1/2 md:mb-0 mb-10">
+			<div class="md:w-1/2 md:mb-0 mb-10" id="about">
 				<h2
 					class="capitalize text-center italic font-serif font-bold text-6xl text-blue-400"
 				>
@@ -52,7 +90,7 @@
 				</p>
 				<a
 					href="#"
-					class="inline-block py-2 px-3 mr-4  shadow-sm bg-blue-400 rounded-md text-white p-2 "
+					class="inline-block py-2 px-3 mr-4 mb-3 shadow-sm bg-blue-400 rounded-md text-white p-2 "
 					>Learn more</a
 				>
 				<a
@@ -128,5 +166,7 @@
 				Copyright &copy; Pyro, 2021
 			</div>
 		</div>
+
+		<script src="index.js"></script>
 	</body>
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>contact us</title>
+		<link rel="stylesheet" href="./output.css" />
+	</head>
+	<body>
+		<div class="flex items-center justify-between flex-wrap bg-blue-400  p-4 ">
+			<div class="flex items-center  flex-shrink-0  text-white mr-6">
+				<img
+					src="https://cdn3.iconfinder.com/data/icons/analytics-5/500/Analytics-40-256.png"
+					width="50"
+					alt="logo"
+					class="mr-2 mb-2"
+				/>
+				<span class="absolute mt-14  italic ml-2 text-md">Pyro</span>
+			</div>
+			<div class="block lg:hidden ">
+				<button
+					class="flex items-center px-3 py-2 border rounded text-teal-100 border-teal-400 hover:text-white hover:border-white"
+					onclick="navBar()"
+				>
+					<svg
+						class="fill-current h-3 w-3"
+						viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+			<div
+				class="w-full   flex-grow lg:flex lg:item-center lg:w-auto"
+				id="navbar-btn"
+			>
+				<div class="text-sm lg:flex-grow  text-center lg:text-right">
+					<a
+						href="index.html"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4 text-lg"
+					>
+						Home
+					</a>
+					<a
+						href="#about"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4 text-lg"
+					>
+						About Us
+					</a>
+					<a
+						href="#team"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4 text-lg"
+					>
+						Team
+					</a>
+					<a
+						href="contact.html"
+						class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white text-lg"
+					>
+						Contact US
+					</a>
+					<a
+						href="#"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-200 hover:bg-white mt-4 lg:mt-0 ml-3"
+						>Login</a
+					>
+					<a
+						href="#"
+						class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-200 hover:bg-white mt-4 lg:mt-0 ml-3"
+						>SignUp</a
+					>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-col">
+			<h3 class="text-center mt-4 text-2xl text-gray-400 ">
+				Contact Us
+			</h3>
+			<span
+				class="text-center leading-4 text-bold mt-4 capitalize text-gray-600"
+				>fill the form to reach us</span
+			>
+			<div class="flex mx-auto py-10 px-12  rounded shadow-2xl mt-8">
+				<form class="flex  flex-col mb-4">
+					<label class="mb-2 font-bold text-lg text-gray-400" for="name"
+						>Full Name</label
+					>
+					<input
+						class="border py-2 px-3 rounded  focus:outline-none placeholder-gray-500"
+						type="text"
+						name="text"
+						placeholder="Jane Doe"
+					/>
+					<label class="mb-2 font-bold text-lg text-gray-400" for="email"
+						>Email</label
+					>
+					<input
+						class="border py-2 px-3 rounded focus:outline-none placeholder-gray-500"
+						type="email"
+						name="email"
+						placeholder="janedoe@gmail.com"
+					/>
+					<label class="mb-2 font-bold text-lg text-gray-400" for="msg"
+						>Message</label
+					>
+					<textarea
+						class="border py-2 px-3 rounded focus:outline-none placeholder-gray-500"
+						name="message"
+						placeholder="lorem ispum....."
+					></textarea>
+					<button
+						class="block bg-blue-400 text-white hover:bg-white hover:text-blue-400 focus:outline-none p-2 mt-4 rounded"
+					>
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

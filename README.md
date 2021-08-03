@@ -1,1 +1,2 @@
-understanding the basic concept of tailwind css and getting familiar with its classes
+Experimenting with Tailwind css
+Tailwind is a great css framework every front end dev should try
